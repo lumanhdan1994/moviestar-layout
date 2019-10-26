@@ -1,0 +1,326 @@
+/* body{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 20px;
+} */
+/* header css */
+/* .container{
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+} */
+#header{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+}
+.header__info__1{
+    color: white;
+}
+.header__info__1 i:first-child{
+    transform: rotate(90deg);
+}
+.navbar-nav{
+    border-bottom: 1px solid #86818136;
+}
+.nav-link{
+    color: white !important;
+}
+.navbar-nav .nav-link{
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+}
+.nav-link{
+    position: relative;
+}
+.nav-link::after{
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: linear-gradient(to right, #fbbd61,#ec7532);
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s;
+}
+.active.nav-link::after{
+    width:100%;
+}
+.nav-link:hover.nav-link::after{
+    width: 100%;
+    transition: all 0.5s;
+}
+
+/* end header css */
+
+/* carousel */
+.carousel-caption {
+    top: 40%;
+    left: 5%;
+    text-align: left;
+}
+.carousel-indicators li{
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    border: 3px solid white;
+    background: transparent;
+}
+/* end carousel */
+
+/* lichchieu css */
+#LichChieu .nav-item a{
+    color: black !important;
+    font-weight: 500;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    border: 1px solid transparent;
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
+    border: 1px solid transparent;
+    
+}
+/* end lichchieu css */
+/* showing movie css */
+#showing-movie h1{
+    color: #ec7532;
+    border-bottom: 1px solid #86818136;
+    padding: 1.6rem 0;
+    font-size: 1.3rem;
+    position: relative;
+    font-weight: 500;
+}
+#showing-movie h1::after{
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 20%;
+    background: linear-gradient(to right, #fbbd61,#ec7532);
+    bottom: 0;
+    left: 0;
+}
+.movie__content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 2.5rem 0;
+    grid-gap: 2rem;
+}
+.movie__item{
+    width: 100%;
+}
+.movie__img{
+    border-radius: 10px; 
+}
+.movie__title{
+    text-align: center;
+}
+.movie__title p{
+    margin-top: 1.3rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.movie__title i{
+    color: #fbbd61;
+}
+.movie__hover{
+    text-align: center;
+    opacity:1;
+}
+.movie__hover i{
+    font-size: 10rem;
+}
+.movie__hover a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+}
+.movie__hover a span{
+    display: block;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+.movie__item{
+    position: relative;
+}
+.movie__hover{
+    position: absolute;
+    left: 20%;
+    top: 13%;
+    transform: scale(0.2);
+    opacity: 0;
+}
+.movie__img{
+    position: relative;
+    overflow: hidden;
+}
+.movie__img .movie-effect{
+    position: absolute;
+    width: 1rem; /* 63rem */
+    height: 36rem;
+    bottom: -50%;
+    left: -116%;
+    background-color: #ec7632ee;
+    transform: skew(50deg);
+    opacity: 0.5;
+}
+/* animation */
+.movie__img:hover .movie-effect{
+    width:  67rem ;
+    transition: all 0.3s;
+    opacity: 1;
+}
+.movie__img:hover .movie__hover{
+    position: absolute;
+    left: 50%;
+    top: 13%;
+    transform: translate(-50%);
+    opacity: 1;
+    color: white;
+    transition: all 0.3s 0.2s;
+}
+
+/* bootstrap css */
+.rounded{
+    border-radius: 20px !important;
+}
+.item h2{
+    font-size: 1.5rem;
+}
+.icon-star{
+    color: #fbbd61;
+}
+/* bootstrap css */
+/* end showing movie css */
+/* lichchieu css */
+.lichchieu-item .row .col-md-9 h1{
+    font-size: 1rem;
+    color: #ec7532;
+    margin:0;
+}
+.lichchieu-item .row .col-md-9>p{
+    font-size: 3rem;
+    padding:0;
+}
+.lichchieu-item .row .col-md-9>span{
+    font-weight: 500;
+}
+.lichchieu-item .row .col-md-9>a{
+    display: block;
+    text-decoration: none;
+    color: #ec7532;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    padding: 1.5rem 0;
+}
+.lichchieu-item .row .col-md-9>a>i{
+    font-size: 0.8rem;
+}
+.item-showing-time p:nth-child(2){
+    padding: 0 1rem;
+}
+.rating span{
+    padding: 6px 8px;
+}
+.item-time{
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.item-showing-time button{
+    border: 1px solid transparent;
+    background-color: transparent;
+    padding: 0 1rem;
+    font-weight: 700;
+    font-size: 1rem;
+}
+/* end lichchieu css */
+/* comming soon css */
+#Comming-soon{
+    background: url(./../img/slide-3.png) no-repeat center center;
+    height: 500px;
+    background-color: black;
+}
+.comming-content-bg{
+    color:white;
+}
+.comming-content-bg h1{
+    color: #ffffff;
+    font-size: 1.3rem;
+    position: relative;
+    font-weight: 500;
+    padding: 1rem 0;
+}
+.comming-content-bg h1::after{
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 17%;
+    background: linear-gradient(to right, #fbbd61,#ec7532);
+    bottom: 0;
+    left: 0;
+}
+.row .col-md-6 p:first-child{
+    font-size: 0.8rem;
+    color: #ec7532;
+    font-weight: 500;
+    margin:0;
+}
+.row .col-md-6 h1{
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem 0;
+}
+.row .col-md-6>a{
+    text-decoration: none;
+    color: #ec7532;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    padding: 1.5rem 0;
+}
+.row .col-md-6>a>i{
+    font-size: 0.8rem;
+}
+
+.play-button{
+    border: 2px solid #ec7532;
+    background-color: transparent;
+    width: 90px;
+    height: 90px;
+}
+.col-md-6 img{
+    position: relative;
+}
+.col-md-6>div{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.play-button{
+    position: relative;
+}
+.play-button i{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size: 2rem;
+}
+/* end comming soon css */
+@media only screen and (max-width: 992px){
+    #header{
+        /* display: none !important; */
+    }
+    /* #header .navbar .navbar-nav>.dropdown{
+        display: none !important;
+    } */
+}
+@media only screen and (min-width: 992px){
+    #header .navbar .navbar-nav .dropdown{
+        display: none !important;
+    }
+}

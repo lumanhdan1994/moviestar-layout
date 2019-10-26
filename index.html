@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="header__info">
+            <div class="header__info__1 container text-right mt-2">
+                <i class="fas fa-phone mr-3"></i>
+                <span class="d-inline">0909008021</span>
+                <i class="fas fa-search ml-3"></i>
+            </div>
+
+            <nav class="navbar navbar-expand-sm navbar-dark d-flex justify-content-between container p-0">
+                <!-- Brand -->
+                <a class="navbar-brand" href="#">
+                    <img src="./img/logo.svg" alt="">
+                </a>
+
+                <!-- Links -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">WHAT'ON</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SHORTCODES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SIGN IN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SIGN UP</a>
+                    </li>
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">HOME</a>
+                            <a class="dropdown-item" href="#">WHAT'S ON</a>
+                            <a class="dropdown-item" href="#">SHORTCODES</a>
+                            <a class="dropdown-item" href="#">CONTACT</a>
+                            <a class="dropdown-item" href="#">SIGN IN</a>
+                            <a class="dropdown-item" href="#">SIGN UP</a>
+
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- carousel -->
+    <section id="Carousel">
+        <div id="demo" class="carousel slide carousel-fade" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner ">
+                <div class="carousel-item active">
+                    <img src="./img/hero-1.jpg" alt="">
+                    <div class="carousel-caption">
+                        <div class="container px-5">
+                            <span>ACTION, ADVENTURE, FANTASY</span>
+                            <h3>End of the World: Part I</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque neque in nemo temporibus
+                                maiores nisi?</p>
+                            <div>
+                                <div></div>
+                                <button>PLAY TRAILER</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/hero-2.jpg" alt="">
+                    <div class="carousel-caption">
+                        <div class="container px-5">
+                            <h3>Los Angeles</h3>
+                            <p>We had such a great time in LA!</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/hero-3.jpg" alt="">
+                    <div class="carousel-caption">
+                        <div class="container px-5">
+                            <span>ACTION, ADVENTURE, FANTASY</span>
+                            <h3>End of the World: Part I</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque neque in nemo temporibus
+                                maiores nisi?</p>
+                            <div>
+                                <div></div>
+                                <button>PLAY TRAILER</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <!-- <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a> -->
+
+        </div>
+    </section>
+    <!-- end carousel -->
+    <!-- showing movie -->
+    <!-- <section id="showing-movie" class="py-5 container">
+        <h1>SHOWING MOVIE</h1>
+        <div class="movie__content">
+            <div class="movie__item item-1">
+                <div class="movie__img">
+                    <img src="./img/movie-1.jpg" alt="movie-1">
+                    <div class="movie-effect"></div>
+                    <div class="movie__hover">
+                        <a href="#">
+                            <i class="far fa-play-circle"></i>
+                            <span>00:00:00</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="movie__title">
+                    <p>Hush</p>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="movie__item item-2">
+                <div class="movie__img">
+                    <img src="./img/movie-2.jpg" alt="movie-2">
+                    <div class="movie-effect"></div>
+                    <div class="movie__hover">
+                        <a href="#">
+                            <i class="far fa-play-circle"></i>
+                            <span>00:00:00</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="movie__title">
+                    <p>Hush</p>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="movie__item item-3">
+                <div class="movie__img">
+                    <img src="./img/movie-3.jpg" alt="movie-3">
+                    <div class="movie-effect"></div>
+                    <div class="movie__hover">
+                        <a href="#">
+                            <i class="far fa-play-circle"></i>
+                            <span>00:00:00</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="movie__title">
+                    <p>Hush</p>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="movie__item item-4">
+                <div class="movie__img">
+                    <img src="./img/movie-4.jpg" alt="movie-4">
+                    <div class="movie-effect"></div>
+                    <div class="movie__hover">
+                        <a href="#">
+                            <i class="far fa-play-circle"></i>
+                            <span>00:00:00</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="movie__title">
+                    <p>Hush</p>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="showing-movie">
+        <div class="py-5 container">
+            <h1 class="mb-3">SHOWING MOVIE</h1>
+            <!-- grid system -->
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="item">
+                        <img src="./img/movie-1.jpg" alt="" class="img-fluid rounded">
+                        <h2 class="text-center pt-3">Hush</h2>
+                        <p class="text-center">
+                            <i class="fas fa-star icon-star"></i>
+                            <i class="fas fa-star icon-star"></i>
+                            <i class="fas fa-star icon-star"></i>
+                            <i class="fas fa-star icon-star"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="item">
+                        <img src="./img/movie-2.jpg" alt="" class="img-fluid rounded">
+                        <h2 class="text-center pt-3">Hush</h2>
+                        <p class="text-center">
+                            <i class="fas fa-star icon-star"></i>
+                            <i class="fas fa-star icon-star"></i>
+                            <i class="fas fa-star icon-star"></i>
+                            <i class="fas fa-star icon-star"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="item">
+                        <img src="./img/movie-3.jpg" alt="" class="img-fluid rounded">
+                        <h2 class="text-center pt-3">Hush</h2>
+                        <p class="text-center">
+                            <i class="fas fa-star icon-star"></i>
+                            <i class="fas fa-star icon-star"></i>
+                            <i class="fas fa-star icon-star"></i>
+                            <i class="fas fa-star icon-star"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="item">
+                        <img src="./img/movie-4.jpg" alt="" class="img-fluid rounded">
+                        <h2 class="text-center pt-3">Hush</h2>
+                        <p class="text-center">
+                            <i class="fas fa-star icon-star"></i>
+                            <i class="fas fa-star icon-star"></i>
+                            <i class="fas fa-star icon-star"></i>
+                            <i class="fas fa-star icon-star"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end showing movie -->
+    <!-- lich chieu -->
+    <section id="LichChieu" class="py-5">
+        <div class="container">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#home">MON</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#menu1">TUE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#menu2">WED</a>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane container active" id="home">
+                    <div class="lichchieu-item">
+                        <div class="row pt-5">
+                            <div class="col-md-3 pl-0">
+                                <img class="img-fluid rounded" src="./img/movie-5.jpg" alt="">
+                            </div>
+                            <div class="col-md-9">
+                                <h1>ACTION, ADVENTURE, FANTASY</h1>
+                                <P>It's over</P>
+                                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla doloribus atque esse quibusdam aliquam non!</span>
+                                <a href="#">
+                                    FULL SYNOPSIS
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                                <div class="item-time pt-3 d-flex justify-content-between align-items-center">
+                                    <div class="item-showing-time d-flex align-items-center">
+                                        <i class="far fa-clock pt-1 pr-2"></i>
+                                        <span class="pr-4">VIEWING TIME</span>
+                                        <button>14:25</button>
+                                        <button>16:45</button>
+                                        <button>17:30</button>
+                                        <button>19:50</button>
+                                    </div>
+                                    <div class="moive-detail-total d-flex p-2">
+                                        <div class="pr-2">
+                                            <span>105 MINS</span>
+                                        </div> 
+                                        <div class="rating">
+                                            <span class="bg-dark rounded-circle     text-white">15</span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row pt-5">
+                            <div class="col-md-3 pl-0">
+                                <img class="img-fluid rounded" src="./img/movie-5.jpg" alt="">
+                            </div>
+                            <div class="col-md-9">
+                                <h1>ACTION, ADVENTURE, FANTASY</h1>
+                                <P>It's over</P>
+                                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla doloribus atque esse quibusdam aliquam non!</span>
+                                <a href="#">
+                                    FULL SYNOPSIS
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                                <div class="item-time pt-3 d-flex justify-content-between align-items-center">
+                                    <div class="item-showing-time d-flex align-items-center">
+                                        <i class="far fa-clock pt-1 pr-2"></i>
+                                        <span class="pr-4">VIEWING TIME</span>
+                                        <button>14:25</button>
+                                        <button>16:45</button>
+                                        <button>17:30</button>
+                                        <button>19:50</button>
+                                    </div>
+                                    <div class="moive-detail-total d-flex p-2">
+                                        <div class="pr-2">
+                                            <span>105 MINS</span>
+                                        </div> 
+                                        <div class="rating">
+                                            <span class="bg-dark rounded-circle     text-white">15</span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row pt-5">
+                            <div class="col-md-3 pl-0">
+                                <img class="img-fluid rounded" src="./img/movie-5.jpg" alt="">
+                            </div>
+                            <div class="col-md-9">
+                                <h1>ACTION, ADVENTURE, FANTASY</h1>
+                                <P>It's over</P>
+                                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla doloribus atque esse quibusdam aliquam non!</span>
+                                <a href="#">
+                                    FULL SYNOPSIS
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                                <div class="item-time pt-3 d-flex justify-content-between align-items-center">
+                                    <div class="item-showing-time d-flex align-items-center">
+                                        <i class="far fa-clock pt-1 pr-2"></i>
+                                        <span class="pr-4">VIEWING TIME</span>
+                                        <button>14:25</button>
+                                        <button>16:45</button>
+                                        <button>17:30</button>
+                                        <button>19:50</button>
+                                    </div>
+                                    <div class="moive-detail-total d-flex p-2">
+                                        <div class="pr-2">
+                                            <span>105 MINS</span>
+                                        </div> 
+                                        <div class="rating">
+                                            <span class="bg-dark rounded-circle     text-white">15</span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane container fade" id="menu1">...</div>
+                <div class="tab-pane container fade" id="menu2">...</div>
+            </div>
+        </div>
+    </section>
+    <!-- end lich chieu -->
+
+    <!-- comming soon -->
+    <section id="Comming-soon">
+        <div class="comming-content-bg container pt-5">
+            <h1>COMMING SOON</h1>
+            <div class="row">
+                <div class="col-md-6 pt-5">
+                    <p>COMEDY, CRIME</p>
+                    <h2>The Hangover Part III</h2>
+                    <span>
+                        <i class="fas fa-star icon-star"></i>
+                        <i class="fas fa-star icon-star"></i>
+                        <i class="fas fa-star icon-star"></i>
+                        <i class="fas fa-star icon-star"></i>
+                    </span>
+                    <span class="pl-3">
+                        <i class="far fa-calendar"></i>
+                        30 September, 2017
+                    </span>
+                    <p class="pt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, accusantium amet ut officiis recusandae laboriosam eligendi unde iste repudiandae hic.
+                    </p>
+                    <a href="#">
+                        MORE INFO
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <img src="./img/slide-3-video.png" alt="">
+                    <div class="play-button rounded-circle">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- end comming soon -->
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
